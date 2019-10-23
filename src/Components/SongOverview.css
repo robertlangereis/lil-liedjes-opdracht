@@ -1,0 +1,20 @@
+.song-list {
+  font-family: 'Impact', bold;
+  display: flex;
+  width: 95vw;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+.song-header {
+  font-family: 'Impact', bold;
+  display: flex;
+  width: 95vw;
+  margin: 0 auto;
+  border: 3px solid lightsteelblue;
+  height: 30px;
+  color: white;
+  background-color: salmon;
+  justify-content: space-between;
+}
+
