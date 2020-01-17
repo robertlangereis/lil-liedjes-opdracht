@@ -45,7 +45,7 @@ class SongForm extends Component {
           <input
             className='song-row__item song-form__field'
             type='text'
-            placeholder='Artist'
+            placeholder='Artiest'
             name='artist'
             value={this.state.artist}
             onChange={this.handleChange}
@@ -53,12 +53,11 @@ class SongForm extends Component {
           <select
             className='song-row__item song-form__dropdown'
             type='text'
-            placeholder='Genre'
             name='genre'
             value={this.state.genre}
             onChange={this.handleChange}
           >
-            <option />
+            <option value="" disabled selected>Kies je Genre</option>
             <option>Rock</option>
             <option>Jazz</option>
             <option>Pop</option>
@@ -68,9 +67,9 @@ class SongForm extends Component {
             type='number'
             placeholder='Rating'
             name='rating'
-            value={this.state.rating !== null ? this.state.rating : 1}
             onChange={this.handleChange}
           >
+            <option value="" disabled selected>Rating (1-5)</option>
             <option value={1}>1</option>
             <option value={2}>2</option>
             <option value={3}>3</option>
